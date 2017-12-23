@@ -1,0 +1,48 @@
+<html>
+<head>
+    <title>MEAN Server</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>    
+    
+<body>
+<div class="jumbotron text-center">    
+    <h1>Express Server is Running</h1>
+    <hr>
+    <p>This server is running on port 3200</p><br />
+</div>    
+<div class="container">    
+    <h3>STEPS</h3>
+    <ul>
+        <li>npm init</li>
+        <li>npm install express ejs body-parser mongojs</li>
+        <li>create server.js and add file</li>
+        <li>Create other files(dependencies) by checking server.js</li>
+        <ul>
+            <li>routes(Folder) - index.js, tasks.js</li>
+            <li>views(F)- index.html</li>
+        </ul>
+        <li>npm install -g nodemon</li>
+        <li>Starting Server changers from <em><b>node server</b></em> to <em><b>nodemon</b></em></li>
+        <li>(We'll be using MLAB for Database as a Service)</li>
+        <ul>
+            <li>Sign into MLAB</li>
+            <li>Create new Deployment</li>
+            <li>Leave default(Amazon ec2) and select SandBox(free)</li>
+            <li>Db name=> mean_db; db username => meaner; db password => meanest95</li>   
+            <li>Create collection; add document in collection (title, isDone) using json format</li>
+            <li>Edit routes/tasks.js (add var mongojs...) also (var db... add value from mlab)</li>    
+            <li>(add step for all tasks, and single task)</li>
+            <li>Try (http://localhost:3200/api/task/5a3e14d0734d1d12b67519f8)</li>
+            <li>========================================================</li>
+            <li>Still in tasks.js (<big>// Save Task; //update Task</big>)</li>
+        </ul>
+        <li>Whats Left: Install Angular, create forms . . .</li>
+        <li>LINKS: http://localhost:3200  ||  http://localhost:3200/api/tasks</li>
+    </ul>
+</div>     
+</body> 
+</html>
