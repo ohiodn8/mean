@@ -45,6 +45,33 @@
         <li>To deploy to Heroku, add Procfile</li>
 	<li><pre><code>I'm testing with Jenkins</code></pre></li>
     </ul>
+<h3> Running Some Tests on Jenkins Master Build =>/ </h3>
+<p>Needed to add a new way for NodeJS with Jenkins to test <br>
+<pre><code>
+On Local =&gt; Package.json =&gt;
+To devDependencies: 
+"mocha-jenkins-reporter": "0.3.10" 
+
+Test =&gt; 
+"scripts": {
+  "test-jenkins": "JUNIT_REPORT_PATH=/home/report.xml mocha --colors --reporter mocha-jenkins-reporter"
+}
+==============================
+Terminal =&gt; 
+sudo touch /home/report.xml
+sudo chmod 777 /home/report.xml
+==============================
+To check test =&gt; 
+Start server:
+nodemon
+On another terminal: 
+npm run test-jenkins
+==============================
+In Jenkins Build Shell =&gt; 
+npm install 
+npm run test-jenkins
+</code></pre></p>
+
 </div>     
 </body> 
 </html>
