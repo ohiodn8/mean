@@ -2,7 +2,7 @@
 ssh ubuntu@172.31.41.41 <<EOF       
  cd /home/ubuntu/mean 
  git pull      
- npm install --production  
- npm run test-jenkins    
- nodemon    
+ npm install --production      
+ nodemon
+ exit      
 EOF
