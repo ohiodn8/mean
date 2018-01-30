@@ -1,8 +1,8 @@
 -#!/bin/sh     
-ssh userName@development-server-ip <<EOF       
- cd /your-project-path 
+ssh ubuntu@172.31.41.41 <<EOF       
+ cd /mean 
  git pull      
  npm install --production      
- pm2 restart all
+ npm start
  exit      
 EOF
