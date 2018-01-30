@@ -1,6 +1,6 @@
 -#!/bin/sh     
 ssh ubuntu@172.31.41.41 <<EOF       
- cd /mean 
+ cd /home/ubuntu/mean 
  git pull      
  npm install --production      
  npm start
