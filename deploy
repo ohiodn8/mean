@@ -1,8 +1,9 @@
 -#!/bin/sh     
-ssh ubuntu@172.31.41.41 <<EOF       
+ssh ubuntu@172.31.41.41 <<EOF 
+ touch /home/report.xml
+ mkdir /home/ubuntu/mean      
  cd /home/ubuntu/mean 
  git pull      
  npm install --production      
- nodemon
- exit      
+ nodemon      
 EOF
