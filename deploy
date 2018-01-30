@@ -1,10 +1,10 @@
 -#!/bin/sh     
 ssh ubuntu@172.31.41.41 <<EOF 
  sudo touch /home/report.xml
- sudo chmod 777 /home/report.xml
- mkdir /home/ubuntu/mean      
- cd /home/ubuntu/mean 
- git pull https://github.com/ohiodn8/mean.git     
+ sudo chmod 777 /home/report.xml      
+ cd /home/ubuntu
+ git pull https://github.com/ohiodn8/mean.git  
+ cd /home/ubuntu/mean   
  npm install --production      
  nodemon      
 EOF
