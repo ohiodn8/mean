@@ -1,5 +1,5 @@
 -#!/bin/sh     
-ssh ubuntu@172.31.41.41 <<EOF 
+ssh ubuntu@17... <<EOF 
  sudo touch /home/report.xml
  sudo chmod 777 /home/report.xml      
  cd /home/ubuntu
